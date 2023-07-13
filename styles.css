@@ -48,6 +48,35 @@
     grid-column-end: 5;
 }
 
+.topHeaderSection {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 40%;
+}
+
+.searchSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBar {
+    border-radius: 50px;
+    border: 0px;
+    background-color: lightgrey;
+    opacity: 50%;
+    width: 80%;
+    height: 30px;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.userSection {
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+}
+
 .main-content {
     border: 5px solid purple;
     grid-column-start: 2;
@@ -55,3 +84,4 @@
     grid-row-start: 2;
     grid-row-end: 6;
 }
+

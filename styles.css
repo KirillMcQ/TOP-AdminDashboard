@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
 }
+
+/*Icon Sizing*/
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; } /* Default */
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons {padding: 0; margin: 0;}
 
 .all-container {
     display: grid;
@@ -13,11 +23,23 @@
 }
 
 .sidebar {
-    border: 5px solid green;
+    padding: 20px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 6;
+
+    display: grid;
+    grid-template-rows: 1fr 3fr 4fr;
+}
+
+.sidebar > ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.sidebar > ul > li {
+    margin-bottom: 20px;
 }
 
 .header {
